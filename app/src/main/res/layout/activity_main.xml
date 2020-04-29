@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    android:id="@+id/activity_main"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,5 +9,37 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+        android:background="#26ade0"
     tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+        <TextView
+                android:gravity="center_horizontal"
+                android:padding="40dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="TextView"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textHello"/>
+        <ImageView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ball1" android:id="@+id/imageView"/>
+        <Button
+                android:textColor="#ffffff"
+                android:background="#3F51B5"
+                android:text="Ask"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:layout_width="206dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/askButton"/>
+    </LinearLayout>
 </RelativeLayout>
